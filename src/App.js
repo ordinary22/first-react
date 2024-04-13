@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
     let counter = 0;
@@ -9,6 +9,14 @@ function App() {
         counter++;
         setCounter2(counter2 + 1);
     }
+
+    useEffect(() => {
+
+    }, []);
+
+    useEffect(() => {
+
+    }, [counter2]);
 
   return (
       <div>
